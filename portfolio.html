@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>portfolio</title>
+    <style>
+      @import 'utilities.css';
+:root{
+--primary: rgb(29, 221, 189);
+--bgDark: rgb(232, 143, 143);
+--white: rgb(8, 83, 8);
+--secondary: rgb(146, 150, 149);
+--bgLight: blue;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+ }
+ 
+ .logo h2{
+    color: blue;
+    
+ }
+ header{
+    background-color: var(--bgDark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+    }
+    header nav .left a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .2s ease;
+    }
+    header nav .left a:hover{
+    color: var(--primary);
+    }
+    header nav {
+    padding: 2rem 0;
+    }
+    header nav .logo{
+    margin-right: 3rem;
+    }
+    body{
+        font-family: 'Poppins', sans-serif;
+        }
+        .container{
+        max-width: 1152px;
+        padding: 0 15px;
+        margin: 0 auto;
+        }
+        .hero{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        }
+        .hero .left img{
+        width: 400px;
+        margin-left: 40px;
+        }
+        .hero .right {
+        color: var(--white);
+        margin-top: -7rem;
+        }
+        .hero .right h6{
+        font-size: 1.6rem;
+        color: var(--primary);
+        margin-bottom: 0.5rem;
+        }
+        .hero .right h1{
+        font-size: 4rem;
+        font-weight: 100;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+        }
+        .hero .right h1 span{
+        color: var(--primary);
+        }
+        .hero .right p{
+        line-height: 1.9;
+        margin-bottom: 2rem;
+        }
+        .flex{
+            display: flex;
+            }
+            .items-centre{
+            align-items: center;
+            }
+            .justify-between{
+            justify-content: space-between;
+            }
+            .justify-center{
+            justify-content: center;
+            }
+            .justify-right{
+            justify-content: right;
+            }
+            .btn{
+            padding: 0.6rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: 2px solid transparent;
+            outline: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all .2s ease;
+            }
+            .btn-primary{
+            background-color: var(--primary);
+            color: var(--secondary);
+            margin-top: -15rem;
+            }
+            .btn-primary:hover{
+            background: transparent;
+            border-color: var(--primary);
+            color: var(--primary);
+            }
+            .flex-1{
+            flex: 1;
+            }
+            .btn-secondary{
+            background: transparent;
+            color: var(--primary);
+            border-color: var(--primary);
+            }
+            .btn-secondary:hover{
+            background: var(--primary);
+            color: var(--secondary);
+            }
+            section{
+                padding: 6rem;
+                }
+                section.about h1{
+                margin-bottom: 1rem;
+                font-size: 1.6rem;
+                font-weight: 600;
+                }
+                section.about h1 span{
+                color: var(--primary);
+                }
+                section.about h3{
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                font-weight: 600;
+                }
+                section.about p{
+                font-family: 'Lato', sans-serif;
+                color: var(--secondary);
+                line-height: 1.9rem;
+                margin-bottom: 2rem;
+                }
+                section.about .socials{
+                display: flex;
+                }
+                section.about .socials a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                margin-right: 0.8rem;
+                border-radius: 50%;
+                }
+                section.about .socials a:hover{
+                background: var(--primary);
+                }
+
+                section.services{
+                    background-color:var(--bgDark);
+                    }
+                    .services-head{
+                    color: rgb(10, 9, 9);
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    line-height: 0.5rem;
+                    color: var(--primary);
+                    }
+                    .services-head + p{
+                    color: var(--white);
+                    font-family: 'Lato', sans-serif;
+                    margin-bottom: 1rem;
+                    text-align: center;
+                    margin-bottom: 6rem;
+                    font-weight: 400;
+                    }
+                    .card img{
+                    width: 50px;
+                    background:white;
+                    }
+                    section.services .card-grid{
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    column-gap: 2rem;
+                    }
+                    section.services .card-grid .card{
+                    background: var(--white);
+                    padding: 3rem 2rem;
+                    position: relative;
+                    text-align: center;
+                    transition: all .2s ease;
+                    }
+                    section.services .card-grid .card img{
+                    position: absolute;
+                    top: -1.5rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: var();
+                    }
+                    section.services .card-grid .card h2{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    margin-bottom: 0.5rem;
+                    }
+                    section.services .card-grid .card p{
+                    font-family: 'Lato', sans-serif;
+                    color: var(--seconday);
+                    line-height: 1.6;
+                    }
+                    section.services .card-grid .card:hover{
+                    background: var(--primary);
+                    }
+                    section.services .card-grid .card:hover h2{
+                    color: var(--white);
+                    }
+                    section.services .card-grid .card:hover p{
+                    color: var(--white);
+                    }
+                    
+    </style>
+</head>
+<body>
+    <header>  
+        <div class="container">  
+          <nav class="flex items-centre justify-between">  
+              <div class="left flex justfiy-right">  
+              <div class="logo">  
+                <h2>ROSHNI YADAV</h2>
+              </div>  
+              <div>  
+                <a href="#">Home</a>  
+                <a href="#">About</a>  
+                <a href="#">Certificate</a>  
+                <a href="#">Skills</a></li>  
+                <a href="#">Content</a>  
+              </div>  
+            </div>  
+            <div class="right">  
+              <button class="btn btn-dark">Contact</button>
+
+            </div>  
+          </nav>
+        </div>  
+      </header>
+
+      <div class="hero flex items-centre justify-between">
+        <div class="left flex-1 justify-center">
+        <img src="https://cdni.iconscout.com/illustration/premium/thumb/female-developer-working-on-project-3839575-3202877.png" alt="Profile">
+        </div>
+        <div class="right flex-1">
+        <h6>Hello , I am Roshni Yadav developer from India.</h6>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque illum nam nobis, minima
+            laudantium fugit sequi nostrum quod impedit, beatae necessitatibus praesentium optio labore
+            nemo! </p>
+        <div>
+        <button class="btn btn-secondary">Downoad CV</button>
+        </div>
+        </div>
+        </div>
+
+        <section class="about">
+            <div class="container flex items-centre">
+            <div class="left flex-1 justify-right">
+            <img src="data:image/jpeg;base64,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" height="400px" alt="profile pic">
+            </div>
+            <div class="right flex-1">
+            <h2>FRONTEND DEVELOPER</h2>
+            <h3> I'm Roshni Yadav.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci distinctio obcaecati aliquid,
+            quia tempora quis optio repudiandae officia earum?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <div class="socials">
+            <a href="#"><i </a>
+            <a href="#"><img src="./images/facebook.png" width="40px"></a>
+            <a href="#"><img src="./images/instagram.png" width="40px"></a>
+            <a href="#"><img src="./images/media-player.png" width="40px"></a>
+            </div>
+            </div>
+            <button class="btn btn-secondary">My skills</button>
+            </div>
+            </section>
+
+            <section class="services">
+                <div class="container">
+                <h1 class="services-head">Services</h1>
+                <p>All your digital needs... covered.</p>
+                <div class="card-grid">
+                <div class="card">
+                  <img src="https://w7.pngwing.com/pngs/390/229/png-transparent-logo-html5-brand-design-text-logo-number.png">
+                <h2>HTML</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, debitis?</p>
+                </div>
+                <div class="card">
+                <img src="https://w7.pngwing.com/pngs/938/646/png-transparent-web-development-responsive-web-design-html-css3-cascading-style-sheets-others-miscellaneous-blue-angle-thumbnail.png">
+                <h2>CSS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, debitis?</p>
+                </div>
+                <div class="card">
+                <img src="https://e7.pngegg.com/pngimages/113/458/png-clipart-javascript-logo-comment-html-markup-language-analitycs-angle-text.png">
+                <h2>JAVASCRIPT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, debitis?</p>
+                </div>
+                </div>
+                </div>
+                </section>
+                
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
